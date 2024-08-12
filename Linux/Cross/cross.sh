@@ -28,9 +28,9 @@ COMMON_ARGS=(
     -DLLVM_ENABLE_RUNTIMES="compiler-rt;libcxx;libcxxabi;libunwind"
     -DLLVM_TARGETS_TO_BUILD="X86;AArch64;NVPTX;ARM;AMDGPU;PowerPC"
     -DLLVM_ENABLE_ASSERTIONS=ON
-    -DLLVM_ENABLE_DOXYGEN=ON
-    -DLLVM_BUILD_DOCS=ON
-    -DLLVM_ENABLE_SPHINX=ON
+    -DLLVM_ENABLE_DOXYGEN=OFF
+    -DLLVM_BUILD_DOCS=OFF
+    -DLLVM_ENABLE_SPHINX=OFF
     -DLLVM_ENABLE_LIBXML2=ON
     -DLLVM_ENABLE_TERMINFO=ON
     -DLLVM_ENABLE_LIBEDIT=ON
@@ -41,9 +41,10 @@ COMMON_ARGS=(
     -DLLVM_ENABLE_RTTI=OFF
     -DLLVM_ENABLE_EH=OFF
     -DLLVM_USE_INTEL_JITEVENTS=ON
+    -DLLVM_INCLUDE_TESTS=OFF
+    -DLLVM_INCLUDE_EXAMPLES=OFF
     -DLLVM_ENABLE_Z3_SOLVER=ON
     -DCMAKE_CXX_STANDARD=17
-    -DLLVM_INCLUDE_TESTS=OFF
     -G Ninja
     $MACOS_ARGS
 )
@@ -57,9 +58,6 @@ cmake ../llvm "${COMMON_ARGS[@]}"
 
 # Build and install LLVM, Clang, and LLD
 ninja install
-
-# Generate Doxygen documentation
-ninja doxygen-llvm doxygen-clang doxygen-lld
 
 # Return to the original directory
 cd ..
