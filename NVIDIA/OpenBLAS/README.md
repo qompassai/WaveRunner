@@ -28,10 +28,10 @@ Version: 0.3.28.dev, compiled on Arch Linux machine with x86_64 processor
 ## Build Instructions
 
 1. Clone the OpenBLAS repository:
-   \`\`\`
+   ```bash
    git clone https://github.com/xianyi/OpenBLAS.git
    cd OpenBLAS
-   \`\`\`
+   ```
 
 2. Build OpenBLAS:cat << EOF > /home/phaedrus/Forge/GH/Qompass/WaveRunner/NVIDIA/OpenBLAS/README.md
 # OpenBLAS Release
@@ -41,15 +41,15 @@ Version: 0.3.28.dev
 ## Build Instructions
 
 1. Clone the OpenBLAS repository:
-   \`\`\`
+   ```bash
    git clone https://github.com/xianyi/OpenBLAS.git
    cd OpenBLAS
-   \`\`\`
+   ```
 
 2. Build OpenBLAS:
-   \`\`\`
+   ```bash
    make TARGET=<target> USE_OPENMP=1
-   \`\`\`
+   ```
    Replace <target> with one of the following options:
 
    x86/x86_64 targets:
@@ -78,9 +78,10 @@ Version: 0.3.28.dev
    - GENERIC, LOONGSON3A, LOONGSON3B, ZARCH_GENERIC, Z13, Z14
 
 3. Install OpenBLAS:
-   \`\`\`
+   ```bash
    sudo make PREFIX=/usr/local install
-   \`\`\`
+   sudo ldconfig
+   ```
 
 ## Notes
 
