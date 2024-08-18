@@ -174,6 +174,11 @@ scripts/config --file .config --enable CGROUP_DEVICE
 scripts/config --file .config --enable CGROUP_CPUACCT
 scripts/config --file .config --enable MEMCG_SWAP_ENABLED
 
+## Build Kernel
+make -j $(nproc)
+export INSTALL_MOD_PATH=/home/phaedrus/Forge/GH/linux/Linux_for_Tegra/rootfs
+sudo -E make install
+
 
 ###############################################################
 # NVIDIA Tegra specific configurations
