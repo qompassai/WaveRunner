@@ -158,6 +158,22 @@ scripts/config --file .config --enable MEMCG_SWAP
 scripts/config --file .config --enable CGROUP_PERF
 scripts/config --file .config --enable CGROUP_HUGETLB
 scripts/config --file .config --enable RT_GROUP_SCHED
+scripts/config --file .config --enable DRM_NVIDIA
+scripts/config --file .config --enable NVIDIA_DRM
+scripts/config --file .config --enable CUDA_SUPPORT
+scripts/config --file .config --enable MEMORY_FAILURE
+scripts/config --file .config --enable HUGETLBFS
+scripts/config --file .config --enable TRANSPARENT_HUGEPAGE_MADVISE
+scripts/config --file .config --enable CPU_FREQ_GOV_PERFORMANCE
+scripts/config --file .config --enable SCHED_MC
+scripts/config --file .config --enable SCHED_SMT
+scripts/config --file .config --enable TCP_CONG_CUBIC
+scripts/config --file .config --enable IP_MULTICAST
+scripts/config --file .config --enable NET_SCHED
+scripts/config --file .config --enable CGROUP_DEVICE
+scripts/config --file .config --enable CGROUP_CPUACCT
+scripts/config --file .config --enable MEMCG_SWAP_ENABLED
+
 
 ###############################################################
 # NVIDIA Tegra specific configurations
