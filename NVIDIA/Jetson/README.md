@@ -179,7 +179,12 @@ make -j $(nproc)
 export INSTALL_MOD_PATH=/home/phaedrus/Forge/GH/linux/Linux_for_Tegra/rootfs
 sudo -E make install
 
+export KERNEL_HEADERS=/home/phaedrus/Forge/GH/linux/Linux_for_Tegra/source/kernel/kernel-jammy-src
 
+
+sudo make modules_install
+make dtbs
+sudo cp arch/arm64/boot/dts/*.dtb /boot/dtb/
 ###############################################################
 # NVIDIA Tegra specific configurations
 #Enable RUST
