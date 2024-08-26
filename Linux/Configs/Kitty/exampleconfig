@@ -1,0 +1,62 @@
+# Font settings
+# font_family DaddyTime Nerd Font
+#font_size 13
+#adjust_line_height 110%  # Improves readability, range: 90-120%
+#adjust_column_width 0    # Default width, range: -1 to 1 (negative narrows, positive widens)
+
+# Color scheme
+#background #000000
+#foreground #00ffff
+#cursor #ff580f
+#cursor_text_color #ffffff
+#selection_foreground #ffffff
+#selection_background #0000ff
+#background_opacity 0.80  # Range: 0.0 (fully transparent) to 1.0 (fully opaque)
+
+# URL handling
+#url_color #0087bd
+#url_style curly  # Options: none, single, double, curly
+#detect_urls yes
+
+# Performance optimizations
+#repaint_delay 10         # Delay between screen updates (in milliseconds), default: 10
+#input_delay 3            # Delay before input is processed (in milliseconds), default: 3
+#sync_to_monitor yes      # Sync screen updates to monitor refresh rate
+
+# Scrollback buffer
+#scrollback_lines 10000   # Number of lines to keep in scrollback
+#scrollback_pager less --chop-long-lines --RAW-CONTROL-CHARS +INPUT_LINE_NUMBER
+
+# Window management
+#enabled_layouts tall,stack  # Comma-separated list of enabled layouts
+#window_border_width 1pt     # Width of window borders, can use pt or px units
+#draw_minimal_borders yes    # Reduces border size when only one window is visible
+#window_margin_width 0       # Margin around all four sides of window, can use pt or px
+#single_window_margin_width 0  # Margin when only one window is visible
+#window_padding_width 0      # Padding inside windows, can use pt or px
+
+# Tab bar
+#tab_bar_edge bottom         # Options: top, bottom
+#tab_bar_style powerline     # Options: fade, slant, separator, powerline, custom
+#tab_powerline_style slanted # Options: angled, slanted, round
+#tab_title_template {index}: {title}
+
+# Cursor customization
+#cursor_shape block  # Options: block, beam, underline
+#cursor_blink_interval 0  # Disable cursor blinking, range: 0 (off) to any positive number (in seconds)
+
+# Kitty shell integration
+#shell_integration enabled  # Options: enabled, disabled
+
+# Audio
+#enable_audio_bell no
+#visual_bell_duration 0.0  # Duration of visual bell in seconds, 0.0 disables it
+
+# GPU rendering
+#gpu_rendering yes  # Enable GPU acceleration if available
+
+# Keyboard shortcuts for window and tab management
+#map ctrl+shift+enter new_window_with_cwd
+#map ctrl+shift+t new_tab_with_cwd
+#map ctrl+shift+[ previous_window
+#map ctrl+shift+] next_window
