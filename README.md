@@ -1,6 +1,11 @@
-# WaveRunner
-Meshed-Microserver Solutions
+<!-- /qompassai/WaveRunner/README.md -->
+<!-- ---------------------------- -->
+<!-- Copyright (C) 2025 Qompass AI, All rights reserved -->
 
+<h2> Qompass AI WaveRunner: Server Solutions </h2>
+
+![Repository Views](https://komarev.com/ghpvc/?username=qompassai-WaveRunner)
+![GitHub all releases](https://img.shields.io/github/downloads/qompassai/WaveRunner/total?style=flat-square)
 
 
 ## Dual-License Notice
